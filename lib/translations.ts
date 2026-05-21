@@ -1,5 +1,5 @@
 export type Lang = "en" | "es"
-export const CONTACT = { email: "sinapsisinnovadoraperu@gmail.com", telegram: "+51902126765", company: "Sinapsis Innovadora" } as const
+export const CONTACT = { email: "hello@cli-market.dev", telegram: "+51902126765", company: "Sinapsis Innovadora" } as const
 export const PRODUCT = { name: "Invisible Hand", infra: "CLI Market", domain: "invisiblehand.io" } as const
 
 export const translations = {
