@@ -33,7 +33,7 @@ export function Footer() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }} className="flex flex-col justify-between">
             <div>
               <span className="block mb-4 font-mono text-[10px] uppercase tracking-[0.2em] text-gray-300">{tr.stack}</span>
-              <div className="flex flex-wrap gap-2">{["VTEX","JSON API","CSV","67 countries","3,760 retailers"].map(tech => (<span key={tech} className="px-2.5 py-1 font-mono text-[10px] text-gray-400 border border-gray-600" style={{ borderRadius: "999px" }}>{tech}</span>))}</div>
+              <div className="flex flex-wrap gap-2">{["VTEX","JSON API","27 retailers","8 countries"].map(tech => (<span key={tech} className="px-2.5 py-1 font-mono text-[10px] text-gray-400 border border-gray-600" style={{ borderRadius: "999px" }}>{tech}</span>))}</div>
             </div>
             <button onClick={toTop} className="mt-8 self-start md:self-end flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.2em] text-gray-400 hover:text-[#00FF88] transition-colors"><span>↑</span> {tr.backToTop}</button>
           </motion.div>

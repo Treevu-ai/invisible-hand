@@ -41,6 +41,8 @@ export function Header() {
   const links = [
     { id: "problem", label: tr.nav.why },
     { id: "capabilities", label: tr.nav.capabilities },
+    { id: "process", label: tr.nav.howItWorks },
+    { id: "demo", label: "Demo" },
     { id: "pricing", label: "Pricing" },
   ]
 

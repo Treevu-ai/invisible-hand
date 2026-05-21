@@ -7,7 +7,7 @@ import { t, CONTACT } from "@/lib/translations"
 export function PricingCTA() {
   const { lang } = useLang(); const tr = t(lang).cta
   return (
-    <section className="relative py-20 px-6 text-center bg-white dark:bg-black">
+    <section id="cta" className="relative py-20 px-6 text-center bg-white dark:bg-black">
       <div className="max-w-[600px] mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }} className="flex flex-col gap-6">
           <div className="inline-flex items-center gap-2 mx-auto"><span className="inline-block h-1.5 w-1.5 rounded-full bg-[#00FF88]" /><span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#00FF88] font-medium">{tr.eyebrow}</span></div>
