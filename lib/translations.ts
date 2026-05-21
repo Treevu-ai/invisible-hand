@@ -1,291 +1,263 @@
 export type Lang = "en" | "es"
 
-export const CONTACT = {
-  email: "sinapsisinnovadoraperu@gmail.com",
-  telegram: "+51902126765",
-  company: "Sinapsis Innovadora",
-} as const
-
-export const PRODUCT = {
-  name: "Invisible Hand",
-  infra: "CLI Market",
-  domain: "invisiblehand.io",
-} as const
+export const CONTACT = { email: "sinapsisinnovadoraperu@gmail.com", telegram: "+51902126765", company: "Sinapsis Innovadora" } as const
+export const PRODUCT = { name: "Invisible Hand", infra: "CLI Market", domain: "invisiblehand.io" } as const
 
 export const translations = {
   en: {
-    nav: { why: "Why this exists", capabilities: "What it does", coverage: "The scale", howItWorks: "How", getAccess: "Get access" },
+    nav: { why: "Why an agent", capabilities: "What it does", coverage: "Coverage", howItWorks: "How", getAccess: "Get access" },
     hero: {
-      eyebrow: `${PRODUCT.infra} infrastructure · 3,760 retailers · 67 countries`,
-      headline1: "You're trading on information.",
-      headline2: "Is it better than your competitor's?",
-      subtitle: `${PRODUCT.name} gives you the same retail pricing data that moves markets — before it reaches Bloomberg, before official reports, before your competitors adjust their positions. 3,760 retailers. 67 countries. Every 24 hours. One clean signal.`,
-      ctaPrimary: "See what you're missing",
-      ctaSecondary: "How it works",
-      scrollHint: "The case for better data",
-      byline: `By ${CONTACT.company}. We close information gaps.`,
+      eyebrow: `AI procurement agent · ${PRODUCT.infra} · 3,760 suppliers · LATAM`,
+      headline1: "Your procurement agent.",
+      headline2: "It finds the best price. You approve. It buys.",
+      subtitle: `${PRODUCT.name} is the first AI agent specialized in procurement for LATAM. It scans thousands of suppliers, finds the best prices, prepares the purchase, and waits for your approval. Human in the loop. Always.`,
+      ctaPrimary: "See how it works", ctaSecondary: "Talk to us",
+      scrollHint: "Why your procurement needs an agent",
+      byline: `By ${CONTACT.company}. We automate procurement. You stay in control.`,
     },
     problem: {
-      eyebrow: "The gap",
-      headline: "Your competitor sees a price change in Mexico.",
-      headline2: "You see it in next quarter's earnings call.",
-      subtext: `Retail pricing data is the most undervalued signal in global markets. It moves before CPI. Before corporate earnings. Before supply chain reports. Yet most funds, brands, and analysts operate on stale, sampled, or survey-based data. ${PRODUCT.name} closes that gap. 3,760 retailers. Actual shelf prices. Every 24 hours. The same signal that institutional desks are already trading on.`,
+      eyebrow: "The problem",
+      headline: "Procurement in LATAM is a full-time job.",
+      headline2: "It shouldn't be.",
+      subtext: `Most businesses buy from the same 3-4 suppliers — not because they're the best, but because discovering alternatives takes days. ${PRODUCT.name} scans 3,760 suppliers in seconds. Finds prices you didn't know existed. Waits for you to say yes.`,
       cards: [
-        { title: "Information asymmetry is your edge.", desc: `When you know prices across 67 countries and your competitor doesn't, every trade, every campaign, every pricing decision compounds in your favor. ${PRODUCT.name} delivers that asymmetry as a service.`, tag: "advantage" },
-        { title: "Speed is money.", desc: "Official reports lag by weeks. Surveys are outdated before they're published. Our data refreshes every 24 hours. You react to market movements while your competitors are still reading last month's PDF.", tag: "speed" },
-        { title: "Coverage is confidence.", desc: "3,760 retailers. 12 verticals. From supermarkets in Lima to electronics in Berlin. If a price changes anywhere that matters, you know. No sampling. No extrapolation. Ground truth.", tag: "coverage" },
-        { title: "Compliance is built in.", desc: "All data legally sourced. No regulatory exposure. No counterparty risk. Your compliance team reviews the methodology once and signs off. Then you operate.", tag: "compliant" },
+        { title: "You're overpaying and you don't know it.", desc: `${PRODUCT.name} shows you the same product across the entire region. The spread is often 30-40%. That goes straight to your margin.`, tag: "savings" },
+        { title: "Supplier discovery is manual and slow.", desc: "Finding a new supplier means calls, fairs, referrals, and weeks of back-and-forth. The agent scans the market in real time. You see options you didn't know existed.", tag: "discovery" },
+        { title: "The loop is human. Always.", desc: "The agent researches, compares, and prepares. But it never buys without your approval. Every purchase order waits for you.", tag: "control" },
+        { title: "Built on real price data.", desc: `Every price comes from ${PRODUCT.infra} — actual shelf prices updated daily. Not surveys. Not estimates. Ground truth.`, tag: "real data" },
       ],
     },
     stats: {
       eyebrow: "By the numbers",
-      headline: "If your current data source is smaller than this, you're operating at a disadvantage.",
-      subtext: `${PRODUCT.infra} monitors 3,760 retailers across 67 countries. 12 business verticals. Updated every 24 hours. ${PRODUCT.name} delivers this as a decision-ready signal.`,
-      items: [
-        { value: "3,760", label: "Retailers monitored" }, { value: "67", label: "Countries covered" },
-        { value: "12", label: "Business verticals" }, { value: "24h", label: "Data refresh" },
-      ],
+      headline: "The agent scans more suppliers than your team could call in a year.",
+      subtext: `${PRODUCT.infra} monitors prices across 3,760 suppliers in 67 countries. ${PRODUCT.name} puts that intelligence into every purchase.`,
+      items: [{ value: "3,760", label: "Suppliers" }, { value: "67", label: "Countries" }, { value: "24h", label: "Price refresh" }, { value: "30-40%", label: "Typical savings" }],
     },
     who: {
-      eyebrow: "Who operates here",
-      headline: "If your decisions depend on what things actually cost, this is for you.",
+      eyebrow: "Who uses an AI procurement agent",
+      headline: "If you buy things for your business, this is for you.",
       segments: [
-        { label: "Portfolio Managers", desc: "Cross-border arbitrage. Real-time pricing signals. Alpha from infrastructure." },
-        { label: "Strategy Directors", desc: "Competitor pricing across every market. Not estimates. Shelf prices." },
-        { label: "Brand Leaders", desc: "Market positioning in real time. MAP enforcement. Competitive defense." },
-        { label: "Macro Analysts", desc: "Inflation signals weeks before official data. Ground truth from retail prices." },
-        { label: "Trading Desks", desc: "Consumer prices move before markets price them in. Be positioned first." },
+        { label: "Procurement Managers", desc: "Stop calling suppliers. Compare prices across the region. Every morning." },
+        { label: "Supply Chain Directors", desc: "Discover alternative suppliers in real time. Reduce single-source risk." },
+        { label: "Business Owners", desc: "The agent finds savings you didn't know existed. That's margin you keep." },
+        { label: "CFOs", desc: "Real-time visibility into procurement spend. Every purchase justified by data." },
+        { label: "Restaurant & Retail", desc: "Ingredients, packaging, supplies. Prices change daily. The agent tracks them." },
       ],
     },
     capabilities: {
-      eyebrow: "What this enables",
-      headline: "Decisions backed by reality.",
-      headline2: "Not surveys. Not estimates. Not last quarter's data.",
+      eyebrow: "What the agent does",
+      headline: "It researches. It compares.",
+      headline2: "It prepares. You approve.",
       cards: [
-        { n: "01", title: "Cross-border price discovery", desc: "Same product. Different country. Different price. That spread represents opportunity — or risk. Monitor both simultaneously. Act on the difference before it disappears.", tags: ["Arbitrage", "Trading"] },
-        { n: "02", title: "Competitive positioning", desc: "Your competitor adjusts prices in a key market. You know within 24 hours. Not at the earnings call. Not from a distributor. You respond before their campaign lands. That's not monitoring — that's market defense.", tags: ["Strategy", "Brands"] },
-        { n: "03", title: "Macro signal detection", desc: "Supermarket prices don't wait for central bank announcements. They move first. Track actual shelf prices across 67 countries. See inflation trends 3-6 weeks before official reports. Position accordingly.", tags: ["Macro", "Rates"], chart: { label: "Price index (90d) · CPI release ↓", points: [0,2,3,5,8,7,10,12,11,14,18,15,19,22,20,24,28,25,30,33,31,35,38,36,40,42,39,44,48,45,50,52,49,55,58,56,60,63,61,65,68,64,70,72,69,75,78,76,80,82,79,84,87,85,89,92,90,94,96,93,97,99,96,100,102,99,104,106,103,107,109,106,110,112,109,113,115,112,116,118,115,119,121,118,122,124,121,125,127,124,128,130,127], cpi: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] } },
-        { n: "04", title: "Market structure intelligence", desc: "67 markets. 12 verticals. Daily refresh. Understand market share dynamics, pricing patterns, and competitive positioning in real time — not through quarterly consultant reports.", tags: ["Strategy", "Intel"] },
+        { n: "01", title: "Real-time price discovery", desc: "Tell the agent what you need. It scans 3,760 suppliers and returns the best prices — same product, different suppliers, actual numbers.", tags: ["Pricing", "Discovery"] },
+        { n: "02", title: "Supplier comparison", desc: "The agent compares by price, delivery time, payment terms, and reliability. Surfaces options 30-40% below what you're paying today.", tags: ["Comparison", "Savings"] },
+        { n: "03", title: "Purchase preparation", desc: "Once you pick a supplier, the agent prepares the PO with all details. You review. You approve. It sends.", tags: ["Automation", "Orders"] },
+        { n: "04", title: "Spend intelligence", desc: "The agent tracks every purchase, every price, every supplier. Procurement becomes strategic — not a to-do list.", tags: ["Analytics", "Intel"] },
       ],
     },
     process: {
-      eyebrow: "How it works — for your team",
-      headline: "Your analysts get a signal.",
-      headline2: "Your engineers never build a scraper.",
+      eyebrow: "How it works",
+      headline: "You tell the agent what you need.",
+      headline2: "It handles the rest. Human in the loop.",
       steps: [
-        { n: "I", title: "Decide what matters", desc: "Pick countries. Retailers. Categories. Your strategy defines the scope. No procurement process. No vendor onboarding. Just what you need to operate." },
-        { n: "II", title: "Receive the signal", desc: "Clean, normalized data. Every 24 hours. Same schema across every retailer and country. Your analysts spend time on decisions, not data cleaning." },
-        { n: "III", title: "Act with confidence", desc: "Feed your models. Inform your positions. Defend your margins. Your team operates on the same data that institutional desks are already using. The pipeline runs. You decide." },
+        { n: "1", title: "You describe what you need", desc: "Natural language. No forms. No RFQs. Like texting your best procurement person." },
+        { n: "2", title: "The agent researches", desc: "Scans 3,760 suppliers. Compares prices, terms, availability. Returns the best options with data." },
+        { n: "3", title: "You approve. It buys.", desc: "Pick one. Approve. The agent prepares and sends the PO. You stay in control." },
       ],
     },
     trust: {
-      eyebrow: "Who already relies on this",
-      headline: "They stopped guessing.",
-      headline2: "They started measuring.",
-      metrics: [
-        { value: "200→3,760", label: "Retailers covered before/after" },
-        { value: "0→24h", label: "Data latency eliminated" },
-        { value: "6 → 0", label: "Engineers maintaining scrapers" },
-      ],
+      eyebrow: "Who already uses this",
+      headline: "They stopped calling suppliers.",
+      headline2: "They started using an agent.",
+      metrics: [{ value: "3→0", label: "Days to find a new supplier" }, { value: "30-40%", label: "Average cost reduction" }, { value: "3,760", label: "Suppliers scanned per search" }],
       testimonial: {
-        quote: `We had 6 engineers maintaining scrapers for 1,200 retailers. ${PRODUCT.name} covers 3,760 retailers via ${PRODUCT.infra}, updates daily, costs less than one junior. We shut down our scraping team. Our analysts now spend 90% of their time generating trade ideas — not cleaning data. The edge isn't the data itself. It's what you do with it when you're not busy collecting it.`,
-        author: "Research Director — Long-only equity fund, $2B+ AUM",
-        stat: "90%",
-        statLabel: "analyst time now on research, not data ops",
+        quote: `We had one person full-time calling suppliers. ${PRODUCT.name} now does that in seconds. We found a packaging supplier in Mexico 35% cheaper than our local option. Same quality. I still approve every order. But I don't spend my day on the phone.`,
+        author: "Operations Director — Food & Beverage, 200+ employees",
+        stat: "35%", statLabel: "saved on packaging",
       },
-      bottom: "If your data pipeline has more engineers than analysts, you're building infrastructure. You should be building positions.",
+      bottom: "Your competitors are still calling suppliers one by one. You're running an agent that calls 3,760 at once.",
     },
     pricing: {
-      eyebrow: "Access the signal",
-      headline: "Less than a junior analyst.",
-      headline2: "More data than an entire research department.",
-      monthly: "Monthly", annual: "Annual (2 months free)", save: "",
-      freeLabel: "No long-term contracts. Cancel anytime.",
+      eyebrow: "Access the agent",
+      headline: "Less than a procurement assistant.",
+      headline2: "Faster than your entire purchasing department.",
+      monthly: "Monthly", annual: "Annual (2 months free)", save: "", freeLabel: "No long-term contracts. Cancel anytime.",
       tiers: [
-        { name: "Signal", price: "$197", priceAnnual: "$157/mo", desc: "For individuals and small teams testing the waters.", features: ["10 countries", "500 retailers", "50K data points/mo", "7-day history", "CSV & JSON", "Email support"], cta: "Start", highlight: false },
-        { name: "Position", price: "$497", priceAnnual: "$397/mo", desc: "For funds, brands, and fintechs that operate on data.", features: ["40 countries", "2,000 retailers", "250K data points/mo", "6 months history", "Bulk export", "Price alerts", "Priority support + Slack"], cta: "Get Position", highlight: true },
-        { name: "Dominance", price: "$997", priceAnnual: "$797/mo", desc: "For institutions where information advantage is non-negotiable.", features: ["67 countries", "3,760 retailers", "Unlimited data points", "24 months history", "Everything in Position", "Dedicated support + SLA", "Custom integration"], cta: "Get Dominance", highlight: false },
+        { name: "Starter", price: "$197", priceAnnual: "$157/mo", desc: "For small businesses making their first AI hire.", features: ["10 searches/month", "500 suppliers", "Price comparison", "Basic POs", "Email support"], cta: "Start", highlight: false },
+        { name: "Business", price: "$497", priceAnnual: "$397/mo", desc: "For growing companies that buy weekly.", features: ["50 searches/month", "2,000 suppliers", "Supplier comparison", "Automated POs", "Spend analytics", "Slack support"], cta: "Get Business", highlight: true },
+        { name: "Enterprise", price: "$997", priceAnnual: "$797/mo", desc: "For organizations where procurement is strategic.", features: ["Unlimited searches", "3,760 suppliers", "Everything in Business", "Custom integrations", "Dedicated SLA", "Multi-user approval"], cta: "Get Enterprise", highlight: false },
       ],
-      latamNote: "LATAM-based. Global infrastructure. 40% off first year for regional teams. Invoice in PEN, MXN, BRL, COP.",
-      freeNote: "Start with Signal. Upgrade when the data proves its value — which it will.",
+      latamNote: "LATAM-native. Spanish and Portuguese. Invoice in PEN, MXN, BRL, COP.",
+      freeNote: "Start with Starter. Upgrade when the agent proves its value.",
     },
     demo: {
-      eyebrow: "Under the hood — for your technical team",
-      headline: "One endpoint.",
-      headline2: "Production-ready in minutes.",
-      tabs: { curl: "cURL", python: "Python", response: "Response" },
-      curl: `curl -X POST https://api.${PRODUCT.domain}/v1/prices \\
-  -H "Authorization: Bearer \\$IH_KEY" \\
-  -d '{"countries":["PE","MX","BR"],"categories":["supermarket","electronics"],"skus":["SKU-001","SKU-042"]}'
-
-# Your engineering team integrates this in under an hour.`,
-      python: `import invisiblehand as ih
-client = ih.Client(api_key="ih_live_...")
-prices = client.prices.list(countries=["PE","MX","BR"],categories=["supermarket","electronics"],skus=["SKU-001","SKU-042"])
-for p in prices: print(f"{p.sku} | {p.retailer} | {p.country} | \${p.price}")
-
-# Clean data. No ETL. No maintenance.`,
-      response: `{
-  "data": [
-    { "sku": "SKU-001", "retailer": "Wong", "country": "PE",
-      "price": 12.90, "currency": "PEN", "available": true, "updated": "2026-05-19T14:30:00Z" },
-    { "sku": "SKU-001", "retailer": "Soriana", "country": "MX",
-      "price": 68.50, "currency": "MXN", "available": true, "updated": "2026-05-19T14:28:00Z" }
-  ],
-  "layer": "${PRODUCT.name}", "infra": "${PRODUCT.infra}",
-  "meta": { "total": 142, "refresh": "24h", "latency_ms": 187 }
+      eyebrow: "Agent interface — for evaluation",
+      headline: "You describe. It finds.",
+      headline2: "You approve. It buys.",
+      tabs: { curl: "Request", python: "Agent", response: "Result" },
+      curl: `POST /agent/search
+{
+  "product": "corrugated boxes 30x30cm",
+  "quantity": 5000,
+  "countries": ["PE","MX","CO"],
+  "budget": 1.20
 }`,
-      stats: [{ value: "142", label: "data points" }, { value: "187ms", label: "response" }, { value: "24h", label: "max age" }],
+      python: `from invisiblehand import Agent
+agent = Agent(api_key="ih_live_...")
+result = agent.search("5,000 boxes 30x30cm. Budget $1.20. PE, MX, CO.")
+for opt in result:
+    print(f"{opt.supplier} | {opt.price}")`,
+      response: `{
+  "agent": "${PRODUCT.name}",
+  "options": [
+    { "supplier": "Cartonera del Sur · Lima", "price": 0.89, "savings": "26%" },
+    { "supplier": "Empaques México · CDMX", "price": 0.95, "savings": "21%" }
+  ],
+  "recommendation": "Cartonera del Sur",
+  "action": "Awaiting your approval to send PO"
+}`,
+      stats: [{ value: "3,760", label: "suppliers scanned" }, { value: "2.1s", label: "search time" }, { value: "26%", label: "best savings" }],
     },
     cta: {
-      eyebrow: "The signal is live",
-      headline: "Your competitors are already operating on better data.",
-      headline2: "How long can you afford to wait?",
+      eyebrow: "The agent is live",
+      headline: "Every procurement call you make today costs you margin.",
+      headline2: "The agent makes 3,760 comparisons in seconds.",
       primary: "Get access", secondary: "Message on Telegram",
     },
     footer: {
       brandLine: `${PRODUCT.name} runs on`, infraLine: `${PRODUCT.infra} infrastructure`,
-      tagline: "The same retail pricing signal that institutional desks trade on. Now available as infrastructure.",
+      tagline: "The first AI procurement agent for LATAM. Find the best price. You approve. It buys.",
       connect: "Contact", email: CONTACT.email, telegram: `Telegram: ${CONTACT.telegram}`,
-      stack: "Technology", backToTop: "↑ Top",
+      stack: "Powered by", backToTop: "↑ Top",
       bottomLeft: `${PRODUCT.name} · ${CONTACT.company}`, bottomRight: "",
     },
     langToggle: "ES",
   },
   es: {
-    nav: { why: "Por qué existe", capabilities: "Qué hace", coverage: "La escala", howItWorks: "Cómo", getAccess: "Acceder" },
+    nav: { why: "Por qué un agente", capabilities: "Qué hace", coverage: "Cobertura", howItWorks: "Cómo", getAccess: "Acceder" },
     hero: {
-      eyebrow: `Infraestructura ${PRODUCT.infra} · 3,760 retailers · 67 países`,
-      headline1: "Estás operando con información.",
-      headline2: "¿Es mejor que la de tu competidor?",
-      subtitle: `${PRODUCT.name} te da los mismos datos de precios retail que mueven mercados — antes de que lleguen a Bloomberg, antes de los reportes oficiales, antes de que tus competidores ajusten posiciones. 3,760 retailers. 67 países. Cada 24 horas. Una señal limpia.`,
-      ctaPrimary: "Mira lo que te estás perdiendo", ctaSecondary: "Cómo funciona",
-      scrollHint: "El caso para mejores datos",
-      byline: `Por ${CONTACT.company}. Cerramos brechas de información.`,
+      eyebrow: `Agente de IA para compras · ${PRODUCT.infra} · 3,760 proveedores · LATAM`,
+      headline1: "Tu agente de compras.",
+      headline2: "Él encuentra el mejor precio. Tú apruebas. Él compra.",
+      subtitle: `${PRODUCT.name} es el primer agente de IA especializado en compras para LATAM. Escanea miles de proveedores, encuentra los mejores precios, prepara la compra y espera tu aprobación. Human in the loop. Siempre.`,
+      ctaPrimary: "Mira cómo funciona", ctaSecondary: "Háblanos",
+      scrollHint: "Por qué tus compras necesitan un agente",
+      byline: `Por ${CONTACT.company}. Automatizamos compras. Tú mantienes el control.`,
     },
     problem: {
-      eyebrow: "La brecha",
-      headline: "Tu competidor ve un cambio de precio en México.",
-      headline2: "Tú lo ves en el reporte trimestral.",
-      subtext: `Los datos de precios retail son la señal más subestimada en los mercados globales. Se mueven antes que el IPC. Antes que los resultados corporativos. Antes que los reportes de cadena de suministro. Sin embargo, la mayoría de fondos, marcas y analistas operan con datos obsoletos, muestreados o basados en encuestas. ${PRODUCT.name} cierra esa brecha. 3,760 retailers. Precios reales de estantería. Cada 24 horas. La misma señal que los desks institucionales ya están operando.`,
+      eyebrow: "El problema",
+      headline: "Hacer compras en LATAM es un trabajo de tiempo completo.",
+      headline2: "No debería serlo.",
+      subtext: `La mayoría de empresas compran a los mismos 3-4 proveedores — no porque sean los mejores, sino porque descubrir alternativas toma días. ${PRODUCT.name} escanea 3,760 proveedores en segundos. Encuentra precios que no sabías que existían. Luego espera a que digas sí.`,
       cards: [
-        { title: "La asimetría de información es tu ventaja.", desc: `Cuando conoces precios en 67 países y tu competidor no, cada trade, cada campaña, cada decisión de pricing se acumula a tu favor. ${PRODUCT.name} entrega esa asimetría como servicio.`, tag: "ventaja" },
-        { title: "Velocidad es dinero.", desc: "Los reportes oficiales llegan con semanas de retraso. Las encuestas ya están obsoletas cuando se publican. Nuestros datos se actualizan cada 24 horas. Reaccionas a los movimientos del mercado mientras tus competidores aún leen el PDF del mes pasado.", tag: "velocidad" },
-        { title: "Cobertura es confianza.", desc: "3,760 retailers. 12 verticales. Desde supermercados en Lima hasta electrónica en Berlín. Si un precio cambia en algún lugar que importa, lo sabes. Sin muestreo. Sin extrapolación. Ground truth.", tag: "cobertura" },
-        { title: "Compliance incorporado.", desc: "Todos los datos obtenidos legalmente. Sin exposición regulatoria. Sin riesgo de contraparte. Tu equipo de compliance revisa la metodología una vez y aprueba. Luego operas.", tag: "compliant" },
+        { title: "Estás pagando de más y no lo sabes.", desc: `${PRODUCT.name} te muestra el mismo producto en toda la región. La diferencia suele ser 30-40%. Eso va directo a tu margen.`, tag: "ahorro" },
+        { title: "Descubrir proveedores es manual y lento.", desc: "Encontrar un nuevo proveedor significa llamadas, ferias, referidos y semanas. El agente escanea el mercado en tiempo real.", tag: "descubrimiento" },
+        { title: "El loop es humano. Siempre.", desc: "El agente investiga, compara y prepara. Pero nunca compra sin tu aprobación. Cada orden de compra te espera.", tag: "control" },
+        { title: "Con datos reales de precios.", desc: `Cada precio viene de ${PRODUCT.infra} — precios reales actualizados a diario. No encuestas. No estimaciones. Ground truth.`, tag: "datos reales" },
       ],
     },
     stats: {
       eyebrow: "Los números",
-      headline: "Si tu fuente de datos actual es más pequeña que esto, estás operando en desventaja.",
-      subtext: `${PRODUCT.infra} monitorea 3,760 retailers en 67 países. 12 verticales de negocio. Actualización cada 24 horas. ${PRODUCT.name} entrega esto como una señal lista para decidir.`,
-      items: [
-        { value: "3,760", label: "Retailers monitoreados" }, { value: "67", label: "Países" },
-        { value: "12", label: "Verticales" }, { value: "24h", label: "Actualización" },
-      ],
+      headline: "El agente escanea más proveedores de los que tu equipo podría llamar en un año.",
+      subtext: `${PRODUCT.infra} monitorea precios en 3,760 proveedores en 67 países. ${PRODUCT.name} pone esa inteligencia en cada decisión.`,
+      items: [{ value: "3,760", label: "Proveedores" }, { value: "67", label: "Países" }, { value: "24h", label: "Actualización" }, { value: "30-40%", label: "Ahorro típico" }],
     },
     who: {
-      eyebrow: "Quién opera aquí",
-      headline: "Si tus decisiones dependen de lo que realmente cuestan las cosas, esto es para ti.",
+      eyebrow: "Quién usa un agente de compras IA",
+      headline: "Si compras cosas para tu empresa, esto es para ti.",
       segments: [
-        { label: "Portfolio Managers", desc: "Arbitraje transfronterizo. Señales de precios en tiempo real. Alpha desde infraestructura." },
-        { label: "Dir. de Estrategia", desc: "Precios de competidores en cada mercado. No estimaciones. Precios de estantería." },
-        { label: "Líderes de Marca", desc: "Posicionamiento en tiempo real. MAP enforcement. Defensa competitiva." },
-        { label: "Analistas Macro", desc: "Señales de inflación semanas antes de los datos oficiales. Ground truth desde precios retail." },
-        { label: "Mesas de Trading", desc: "Los precios al consumidor se mueven antes que los mercados los descuenten. Posiciónate primero." },
+        { label: "Jefes de Compras", desc: "Deja de llamar proveedores. Compara precios en toda la región." },
+        { label: "Directores de Supply Chain", desc: "Descubre proveedores alternativos en tiempo real. Reduce riesgo." },
+        { label: "Dueños de Negocio", desc: "El agente encuentra ahorros que no sabías que existían. Eso es margen." },
+        { label: "CFOs", desc: "Visibilidad en tiempo real del gasto. Cada compra justificada con datos." },
+        { label: "Restaurantes y Retail", desc: "Insumos, empaques, suministros. Precios cambian a diario. El agente los rastrea." },
       ],
     },
     capabilities: {
-      eyebrow: "Lo que esto habilita",
-      headline: "Decisiones respaldadas por la realidad.",
-      headline2: "No encuestas. No estimaciones. No datos del trimestre pasado.",
+      eyebrow: "Lo que hace el agente",
+      headline: "Investiga. Compara.",
+      headline2: "Prepara. Tú apruebas.",
       cards: [
-        { n: "01", title: "Descubrimiento de precios transfronterizo", desc: "Mismo producto. Distinto país. Distinto precio. Ese spread representa oportunidad — o riesgo. Monitorea ambos. Actúa sobre la diferencia antes de que desaparezca.", tags: ["Arbitraje", "Trading"] },
-        { n: "02", title: "Posicionamiento competitivo", desc: "Tu competidor ajusta precios en un mercado clave. Lo sabes en 24 horas. No en el earnings call. No por un distribuidor. Respondes antes de que su campaña aterrice. Eso no es monitoreo — es defensa de mercado.", tags: ["Estrategia", "Marcas"] },
-        { n: "03", title: "Detección de señales macro", desc: "Los precios del súper no esperan los anuncios del banco central. Se mueven primero. Rastrea precios reales en 67 países. Ve tendencias de inflación 3-6 semanas antes de los informes oficiales. Posiciónate.", tags: ["Macro", "Tasas"], chart: { label: "Índice de precios (90d) · IPC ↓", points: [0,2,3,5,8,7,10,12,11,14,18,15,19,22,20,24,28,25,30,33,31,35,38,36,40,42,39,44,48,45,50,52,49,55,58,56,60,63,61,65,68,64,70,72,69,75,78,76,80,82,79,84,87,85,89,92,90,94,96,93,97,99,96,100,102,99,104,106,103,107,109,106,110,112,109,113,115,112,116,118,115,119,121,118,122,124,121,125,127,124,128,130,127], cpi: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] } },
-        { n: "04", title: "Inteligencia de estructura de mercado", desc: "67 mercados. 12 verticales. Actualización diaria. Entiende dinámica de participación, patrones de precios y posicionamiento competitivo en tiempo real — no con reportes trimestrales de consultoría.", tags: ["Estrategia", "Intel"] },
+        { n: "01", title: "Descubrimiento de precios en tiempo real", desc: "Dile al agente qué necesitas. Escanea 3,760 proveedores y devuelve los mejores precios — mismo producto, distintos proveedores, números reales.", tags: ["Precios", "Descubrimiento"] },
+        { n: "02", title: "Comparación de proveedores", desc: "El agente compara por precio, entrega, condiciones de pago y confiabilidad. Opciones 30-40% por debajo de lo que pagas hoy.", tags: ["Comparación", "Ahorro"] },
+        { n: "03", title: "Preparación de compra", desc: "Cuando eliges un proveedor, el agente prepara la PO con todos los detalles. Tú revisas. Tú apruebas. Él envía.", tags: ["Automatización", "Órdenes"] },
+        { n: "04", title: "Inteligencia de gasto", desc: "El agente rastrea cada compra, cada precio, cada proveedor. Compras se vuelve estratégico — no una lista de pendientes.", tags: ["Analítica", "Intel"] },
       ],
     },
     process: {
-      eyebrow: "Cómo funciona — para tu equipo",
-      headline: "Tus analistas reciben una señal.",
-      headline2: "Tus ingenieros nunca construyen un scraper.",
+      eyebrow: "Cómo funciona",
+      headline: "Le dices al agente qué necesitas.",
+      headline2: "Él se encarga del resto. Human in the loop.",
       steps: [
-        { n: "I", title: "Decide qué importa", desc: "Elige países. Retailers. Categorías. Tu estrategia define el alcance. Sin procurement. Sin vendor onboarding. Solo lo que necesitas para operar." },
-        { n: "II", title: "Recibe la señal", desc: "Datos limpios y normalizados. Cada 24 horas. Mismo esquema en cada retailer y país. Tus analistas dedican tiempo a decisiones, no a limpiar datos." },
-        { n: "III", title: "Actúa con confianza", desc: "Alimenta tus modelos. Informa tus posiciones. Defiende tus márgenes. Tu equipo opera con los mismos datos que los desks institucionales ya están usando. El pipeline corre. Tú decides." },
+        { n: "1", title: "Describes lo que necesitas", desc: "Lenguaje natural. Sin formularios. Sin RFQs. Como hablar con tu mejor persona de compras." },
+        { n: "2", title: "El agente investiga", desc: "Escanea 3,760 proveedores. Compara precios, condiciones, disponibilidad. Devuelve las mejores opciones con datos." },
+        { n: "3", title: "Tú apruebas. Él compra.", desc: "Elige una. Aprueba. El agente prepara y envía la PO. Tú mantienes el control." },
       ],
     },
     trust: {
-      eyebrow: "Quién ya depende de esto",
-      headline: "Dejaron de adivinar.",
-      headline2: "Empezaron a medir.",
-      metrics: [
-        { value: "200→3,760", label: "Retailers cubiertos antes/después" },
-        { value: "0→24h", label: "Latencia de datos eliminada" },
-        { value: "6 → 0", label: "Ingenieros manteniendo scrapers" },
-      ],
+      eyebrow: "Quién ya usa esto",
+      headline: "Dejaron de llamar proveedores.",
+      headline2: "Empezaron a usar un agente.",
+      metrics: [{ value: "3→0", label: "Días para encontrar proveedor" }, { value: "30-40%", label: "Reducción de costo" }, { value: "3,760", label: "Proveedores escaneados" }],
       testimonial: {
-        quote: `Teníamos 6 ingenieros manteniendo scrapers para 1,200 retailers. ${PRODUCT.name} cubre 3,760 retailers vía ${PRODUCT.infra}, actualización diaria, cuesta menos que un junior. Cerramos el equipo de scraping. Nuestros analistas ahora dedican el 90% de su tiempo a generar ideas de inversión — no a limpiar datos. La ventaja no son los datos. Es lo que haces con ellos cuando no estás ocupado recolectándolos.`,
-        author: "Director de Research — Fondo long-only equity, $2B+ AUM",
-        stat: "90%",
-        statLabel: "del tiempo del analista en research, no en datos",
+        quote: `Teníamos una persona full-time llamando proveedores. ${PRODUCT.name} ahora hace ese trabajo en segundos. Encontramos un proveedor de empaques en México 35% más barato que nuestra opción local. Misma calidad. Yo sigo aprobando cada orden. Pero ya no paso el día pegado al teléfono.`,
+        author: "Director de Operaciones — Alimentos y Bebidas, 200+ empleados",
+        stat: "35%", statLabel: "ahorrado en empaques",
       },
-      bottom: "Si tu pipeline de datos tiene más ingenieros que analistas, estás construyendo infraestructura. Deberías estar construyendo posiciones.",
+      bottom: "Tus competidores siguen llamando proveedores uno por uno. Tú estás corriendo un agente que llama a 3,760 a la vez.",
     },
     pricing: {
-      eyebrow: "Accede a la señal",
-      headline: "Menos que un analista junior.",
-      headline2: "Más datos que un departamento de research completo.",
-      monthly: "Mensual", annual: "Anual (2 meses gratis)", save: "",
-      freeLabel: "Sin contratos de largo plazo. Cancela cuando quieras.",
+      eyebrow: "Accede al agente",
+      headline: "Menos que un asistente de compras.",
+      headline2: "Más rápido que todo tu departamento de compras.",
+      monthly: "Mensual", annual: "Anual (2 meses gratis)", save: "", freeLabel: "Sin contratos de largo plazo. Cancela cuando quieras.",
       tiers: [
-        { name: "Señal", price: "$197", priceAnnual: "$157/mes", desc: "Para individuos y equipos pequeños probando.", features: ["10 países", "500 retailers", "50K datos/mes", "Historial 7 días", "CSV y JSON", "Soporte email"], cta: "Empezar", highlight: false },
-        { name: "Posición", price: "$497", priceAnnual: "$397/mes", desc: "Para fondos, marcas y fintechs que operan con datos.", features: ["40 países", "2,000 retailers", "250K datos/mes", "Historial 6 meses", "Export masivo", "Alertas", "Soporte prioritario + Slack"], cta: "Obtener Posición", highlight: true },
-        { name: "Dominancia", price: "$997", priceAnnual: "$797/mes", desc: "Para instituciones donde la ventaja informativa no es negociable.", features: ["67 países", "3,760 retailers", "Datos ilimitados", "Historial 24 meses", "Todo lo de Posición", "Soporte dedicado + SLA", "Integración custom"], cta: "Obtener Dominancia", highlight: false },
+        { name: "Inicial", price: "$197", priceAnnual: "$157/mes", desc: "Para negocios pequeños con su primera contratación IA.", features: ["10 búsquedas/mes", "500 proveedores", "Comparación de precios", "POs básicas", "Soporte email"], cta: "Empezar", highlight: false },
+        { name: "Negocio", price: "$497", priceAnnual: "$397/mes", desc: "Para empresas en crecimiento que compran semanalmente.", features: ["50 búsquedas/mes", "2,000 proveedores", "Comparación de proveedores", "POs automatizadas", "Analítica de gasto", "Soporte Slack"], cta: "Obtener Negocio", highlight: true },
+        { name: "Enterprise", price: "$997", priceAnnual: "$797/mes", desc: "Para organizaciones donde compras es estratégico.", features: ["Búsquedas ilimitadas", "3,760 proveedores", "Todo lo de Negocio", "Integraciones custom", "SLA dedicado", "Aprobación multi-usuario"], cta: "Obtener Enterprise", highlight: false },
       ],
-      latamNote: "Basados en LATAM. Infraestructura global. 40% off primer año para equipos regionales. Factura en PEN, MXN, BRL, COP.",
-      freeNote: "Empieza con Señal. Escala cuando los datos demuestren su valor — que lo harán.",
+      latamNote: "Nativo LATAM. Español y portugués. Factura en PEN, MXN, BRL, COP.",
+      freeNote: "Empieza con Inicial. Escala cuando el agente demuestre su valor — en la primera búsqueda.",
     },
     demo: {
-      eyebrow: "Bajo el capó — para tu equipo técnico",
-      headline: "Un solo endpoint.",
-      headline2: "Listo para producción en minutos.",
-      tabs: { curl: "cURL", python: "Python", response: "Respuesta" },
-      curl: `curl -X POST https://api.${PRODUCT.domain}/v1/prices \\
-  -H "Authorization: Bearer \\$IH_KEY" \\
-  -d '{"countries":["PE","MX","BR"],"categories":["supermercado","electronica"],"skus":["SKU-001","SKU-042"]}'
-
-# Tu equipo de ingeniería integra esto en menos de una hora.`,
-      python: `import invisiblehand as ih
-client = ih.Client(api_key="ih_live_...")
-precios = client.precios.listar(paises=["PE","MX","BR"],categorias=["supermercado","electronica"],skus=["SKU-001","SKU-042"])
-for p in precios: print(f"{p.sku} | {p.retailer} | {p.pais} | \${p.precio}")
-
-# Datos limpios. Sin ETL. Sin mantenimiento.`,
-      response: `{
-  "data": [
-    { "sku": "SKU-001", "retailer": "Wong", "country": "PE",
-      "price": 12.90, "currency": "PEN", "available": true, "updated": "2026-05-19T14:30:00Z" },
-    { "sku": "SKU-001", "retailer": "Soriana", "country": "MX",
-      "price": 68.50, "currency": "MXN", "available": true, "updated": "2026-05-19T14:28:00Z" }
-  ],
-  "layer": "${PRODUCT.name}", "infra": "${PRODUCT.infra}",
-  "meta": { "total": 142, "refresh": "24h", "latency_ms": 187 }
+      eyebrow: "Interfaz del agente — para evaluación",
+      headline: "Tú describes. Él encuentra.",
+      headline2: "Tú apruebas. Él compra.",
+      tabs: { curl: "Solicitud", python: "Agente", response: "Resultado" },
+      curl: `POST /agent/search
+{
+  "producto": "cajas de cartón 30x30cm",
+  "cantidad": 5000,
+  "paises": ["PE","MX","CO"],
+  "presupuesto": 1.20
 }`,
-      stats: [{ value: "142", label: "datos" }, { value: "187ms", label: "respuesta" }, { value: "24h", label: "edad máx" }],
+      python: `from invisiblehand import Agent
+agent = Agent(api_key="ih_live_...")
+result = agent.search("5,000 cajas 30x30cm. Presupuesto $1.20. PE, MX, CO.")
+for opt in result:
+    print(f"{opt.supplier} | {opt.price}")`,
+      response: `{
+  "agent": "${PRODUCT.name}",
+  "options": [
+    { "supplier": "Cartonera del Sur · Lima", "price": 0.89, "savings": "26%" },
+    { "supplier": "Empaques México · CDMX", "price": 0.95, "savings": "21%" }
+  ],
+  "recommendation": "Cartonera del Sur",
+  "action": "Esperando tu aprobación para enviar PO"
+}`,
+      stats: [{ value: "3,760", label: "proveedores escaneados" }, { value: "2.1s", label: "tiempo" }, { value: "26%", label: "mejor ahorro" }],
     },
     cta: {
-      eyebrow: "La señal está viva",
-      headline: "Tus competidores ya operan con mejores datos.",
-      headline2: "¿Cuánto tiempo más puedes esperar?",
+      eyebrow: "El agente está vivo",
+      headline: "Cada llamada de compras que haces hoy te cuesta margen.",
+      headline2: "El agente hace 3,760 comparaciones en segundos.",
       primary: "Obtener acceso", secondary: "Mensaje por Telegram",
     },
     footer: {
-      brandLine: `${PRODUCT.name} corre sobre infraestructura`, infraLine: PRODUCT.infra,
-      tagline: "La misma señal de precios retail que operan los desks institucionales. Ahora disponible como infraestructura.",
+      brandLine: `${PRODUCT.name} corre sobre`, infraLine: `infraestructura ${PRODUCT.infra}`,
+      tagline: "El primer agente de IA para compras en LATAM. Encuentra el mejor precio. Tú apruebas. Él compra.",
       connect: "Contacto", email: CONTACT.email, telegram: `Telegram: ${CONTACT.telegram}`,
-      stack: "Tecnología", backToTop: "↑ Arriba",
+      stack: "Potenciado por", backToTop: "↑ Arriba",
       bottomLeft: `${PRODUCT.name} · ${CONTACT.company}`, bottomRight: "",
     },
     langToggle: "EN",
