@@ -24,7 +24,7 @@ export function Footer() {
                 <svg className="w-3.5 h-3.5 text-gray-400 group-hover:text-[#00FF88] transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                 {CONTACT.email}<span className="opacity-0 transition-opacity group-hover:opacity-100 text-[#00FF88]">→</span>
               </a>
-              <a href={`https://t.me/${CONTACT.telegram.replace("+", "")}`} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-2 font-mono text-xs text-gray-300 hover:text-white transition-colors">
+              <a href={`https://t.me/${CONTACT.telegram}`} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-2 font-mono text-xs text-gray-300 hover:text-white transition-colors">
                 <svg className="w-3.5 h-3.5 text-gray-400 group-hover:text-[#00FF88] transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4 20-7z"/></svg>
                 {tr.telegram}<span className="opacity-0 transition-opacity group-hover:opacity-100 text-[#00FF88]">→</span>
               </a>

@@ -50,15 +50,15 @@ export function Hero() {
             <span className="text-[#00FF88] [text-shadow:0_0_30px_rgba(0,255,136,0.25)]">{tr.headline2}</span>
           </h1>
           <p className="max-w-[550px] text-gray-600 text-lg leading-relaxed font-medium">{tr.subtitle}</p>
-          <p className="text-gray-400 text-[11px] tracking-wider">{tr.byline}</p>
+          <p className="text-gray-500 text-[11px] tracking-wider">{tr.byline}</p>
         </motion.div>
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.6 }} className="flex flex-col sm:flex-row items-center gap-3">
           <a href="#pricing" className="group inline-flex items-center gap-2 bg-black text-white font-medium px-8 py-3.5 text-sm hover:bg-[#00FF88] hover:text-black transition-colors" style={{ borderRadius: "999px" }}>{tr.ctaPrimary} <span className="transition-transform duration-200 group-hover:translate-x-1">→</span></a>
-          <a href={`https://t.me/${CONTACT.telegram.replace("+", "")}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-gray-200 text-gray-600 px-8 py-3.5 text-sm hover:bg-gray-50 hover:text-black transition-colors" style={{ borderRadius: "999px" }}>Telegram</a>
+          <a href={`https://t.me/${CONTACT.telegram}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-gray-200 text-gray-600 px-8 py-3.5 text-sm hover:bg-gray-50 hover:text-black transition-colors" style={{ borderRadius: "999px" }}>Telegram</a>
         </motion.div>
       </div>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2, duration: 0.6 }} className="absolute bottom-8 flex flex-col items-center gap-2">
-        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-gray-400">{tr.scrollHint}</span>
+        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-gray-500">{tr.scrollHint}</span>
         <motion.div animate={{ y: [0, 6, 0] }} transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }} className="h-4 w-[1px] bg-[#00FF88]/40" />
       </motion.div>
     </section>

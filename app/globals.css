@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme inline {
   --color-background: #FFFFFF;
   --color-foreground: #0A0A0A;
@@ -30,6 +32,10 @@
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
+  .dark body {
+    background: #000000;
+    color: #FFFFFF;
+  }
 }
 
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
@@ -45,7 +51,12 @@
 }
 
 ::selection { background: #00FF88; color: #0A0A0A; }
+.dark ::selection { background: #00FF88; color: #0A0A0A; }
+
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: #F5F5F5; }
 ::-webkit-scrollbar-thumb { background: #D1D1D1; }
 ::-webkit-scrollbar-thumb:hover { background: #999; }
+.dark ::-webkit-scrollbar-track { background: #111; }
+.dark ::-webkit-scrollbar-thumb { background: #333; }
+.dark ::-webkit-scrollbar-thumb:hover { background: #555; }

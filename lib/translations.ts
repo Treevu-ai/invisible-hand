@@ -64,7 +64,7 @@ export const translations = {
       cards: [
         { n: "01", title: "Cross-border price discovery", desc: "Same product. Different country. Different price. That spread represents opportunity — or risk. Monitor both simultaneously. Act on the difference before it disappears.", tags: ["Arbitrage", "Trading"] },
         { n: "02", title: "Competitive positioning", desc: "Your competitor adjusts prices in a key market. You know within 24 hours. Not at the earnings call. Not from a distributor. You respond before their campaign lands. That's not monitoring — that's market defense.", tags: ["Strategy", "Brands"] },
-        { n: "03", title: "Macro signal detection", desc: "Supermarket prices don't wait for central bank announcements. They move first. Track actual shelf prices across 67 countries. See inflation trends 3-6 weeks before official reports. Position accordingly.", tags: ["Macro", "Rates"] },
+        { n: "03", title: "Macro signal detection", desc: "Supermarket prices don't wait for central bank announcements. They move first. Track actual shelf prices across 67 countries. See inflation trends 3-6 weeks before official reports. Position accordingly.", tags: ["Macro", "Rates"], chart: { label: "Price index (90d) · CPI release ↓", points: [0,2,3,5,8,7,10,12,11,14,18,15,19,22,20,24,28,25,30,33,31,35,38,36,40,42,39,44,48,45,50,52,49,55,58,56,60,63,61,65,68,64,70,72,69,75,78,76,80,82,79,84,87,85,89,92,90,94,96,93,97,99,96,100,102,99,104,106,103,107,109,106,110,112,109,113,115,112,116,118,115,119,121,118,122,124,121,125,127,124,128,130,127], cpi: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] } },
         { n: "04", title: "Market structure intelligence", desc: "67 markets. 12 verticals. Daily refresh. Understand market share dynamics, pricing patterns, and competitive positioning in real time — not through quarterly consultant reports.", tags: ["Strategy", "Intel"] },
       ],
     },
@@ -80,15 +80,20 @@ export const translations = {
     },
     trust: {
       eyebrow: "Who already relies on this",
-      headline: "They closed their information gap.",
-      headline2: "You can too.",
-      logos: ["Multi-Strategy Fund · NYC", "Fintech Platform · São Paulo", "Consumer Brand · Lima"],
+      headline: "They stopped guessing.",
+      headline2: "They started measuring.",
+      metrics: [
+        { value: "200→3,760", label: "Retailers covered before/after" },
+        { value: "0→24h", label: "Data latency eliminated" },
+        { value: "6 → 0", label: "Engineers maintaining scrapers" },
+      ],
       testimonial: {
-        quote: `We were operating on sample data from 200 retailers while our competitors — we suspected — had broader coverage. ${PRODUCT.name} gave us 3,760 retailers across 67 countries. Our analysts stopped asking "what are we missing" and started asking "what do we do with this edge."`,
-        author: "Director of Research, Multi-Strategy Fund",
-        stat: "3,760", statLabel: "retailers now covered",
+        quote: `We had 6 engineers maintaining scrapers for 1,200 retailers. ${PRODUCT.name} covers 3,760 retailers via ${PRODUCT.infra}, updates daily, costs less than one junior. We shut down our scraping team. Our analysts now spend 90% of their time generating trade ideas — not cleaning data. The edge isn't the data itself. It's what you do with it when you're not busy collecting it.`,
+        author: "Research Director — Long-only equity fund, $2B+ AUM",
+        stat: "90%",
+        statLabel: "analyst time now on research, not data ops",
       },
-      bottom: "Information asymmetry is either your biggest risk or your greatest asset. You decide.",
+      bottom: "If your data pipeline has more engineers than analysts, you're building infrastructure. You should be building positions.",
     },
     pricing: {
       eyebrow: "Access the signal",
@@ -197,7 +202,7 @@ for p in prices: print(f"{p.sku} | {p.retailer} | {p.country} | \${p.price}")
       cards: [
         { n: "01", title: "Descubrimiento de precios transfronterizo", desc: "Mismo producto. Distinto país. Distinto precio. Ese spread representa oportunidad — o riesgo. Monitorea ambos. Actúa sobre la diferencia antes de que desaparezca.", tags: ["Arbitraje", "Trading"] },
         { n: "02", title: "Posicionamiento competitivo", desc: "Tu competidor ajusta precios en un mercado clave. Lo sabes en 24 horas. No en el earnings call. No por un distribuidor. Respondes antes de que su campaña aterrice. Eso no es monitoreo — es defensa de mercado.", tags: ["Estrategia", "Marcas"] },
-        { n: "03", title: "Detección de señales macro", desc: "Los precios del súper no esperan los anuncios del banco central. Se mueven primero. Rastrea precios reales en 67 países. Ve tendencias de inflación 3-6 semanas antes de los informes oficiales. Posiciónate.", tags: ["Macro", "Tasas"] },
+        { n: "03", title: "Detección de señales macro", desc: "Los precios del súper no esperan los anuncios del banco central. Se mueven primero. Rastrea precios reales en 67 países. Ve tendencias de inflación 3-6 semanas antes de los informes oficiales. Posiciónate.", tags: ["Macro", "Tasas"], chart: { label: "Índice de precios (90d) · IPC ↓", points: [0,2,3,5,8,7,10,12,11,14,18,15,19,22,20,24,28,25,30,33,31,35,38,36,40,42,39,44,48,45,50,52,49,55,58,56,60,63,61,65,68,64,70,72,69,75,78,76,80,82,79,84,87,85,89,92,90,94,96,93,97,99,96,100,102,99,104,106,103,107,109,106,110,112,109,113,115,112,116,118,115,119,121,118,122,124,121,125,127,124,128,130,127], cpi: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] } },
         { n: "04", title: "Inteligencia de estructura de mercado", desc: "67 mercados. 12 verticales. Actualización diaria. Entiende dinámica de participación, patrones de precios y posicionamiento competitivo en tiempo real — no con reportes trimestrales de consultoría.", tags: ["Estrategia", "Intel"] },
       ],
     },
@@ -213,15 +218,20 @@ for p in prices: print(f"{p.sku} | {p.retailer} | {p.country} | \${p.price}")
     },
     trust: {
       eyebrow: "Quién ya depende de esto",
-      headline: "Cerraron su brecha de información.",
-      headline2: "Tú también puedes.",
-      logos: ["Fondo Multi-Estrategia · NYC", "Plataforma Fintech · São Paulo", "Marca de Consumo · Lima"],
+      headline: "Dejaron de adivinar.",
+      headline2: "Empezaron a medir.",
+      metrics: [
+        { value: "200→3,760", label: "Retailers cubiertos antes/después" },
+        { value: "0→24h", label: "Latencia de datos eliminada" },
+        { value: "6 → 0", label: "Ingenieros manteniendo scrapers" },
+      ],
       testimonial: {
-        quote: `Operábamos con datos muestreados de 200 retailers mientras nuestros competidores — sospechábamos — tenían mayor cobertura. ${PRODUCT.name} nos dio 3,760 retailers en 67 países. Nuestros analistas dejaron de preguntar "qué nos estamos perdiendo" y empezaron a preguntar "qué hacemos con esta ventaja."`,
-        author: "Director de Investigación, Fondo Multi-Estrategia",
-        stat: "3,760", statLabel: "retailers ahora cubiertos",
+        quote: `Teníamos 6 ingenieros manteniendo scrapers para 1,200 retailers. ${PRODUCT.name} cubre 3,760 retailers vía ${PRODUCT.infra}, actualización diaria, cuesta menos que un junior. Cerramos el equipo de scraping. Nuestros analistas ahora dedican el 90% de su tiempo a generar ideas de inversión — no a limpiar datos. La ventaja no son los datos. Es lo que haces con ellos cuando no estás ocupado recolectándolos.`,
+        author: "Director de Research — Fondo long-only equity, $2B+ AUM",
+        stat: "90%",
+        statLabel: "del tiempo del analista en research, no en datos",
       },
-      bottom: "La asimetría de información es tu mayor riesgo o tu mejor activo. Tú decides.",
+      bottom: "Si tu pipeline de datos tiene más ingenieros que analistas, estás construyendo infraestructura. Deberías estar construyendo posiciones.",
     },
     pricing: {
       eyebrow: "Accede a la señal",
