@@ -3,7 +3,7 @@
 > **The same retail pricing data that moves markets — before Bloomberg, before reports, before your competitors adjust. 3,760 retailers. 67 countries. One clean signal.**
 
 <p align="center">
-  <img src="https://invisible-handie.vercel.app/opengraph-image.png" alt="Invisible Hand landing page" width="800" />
+  <img src="https://raw.githubusercontent.com/Treevu-ai/invisible-hand/main/public/file.svg" alt="Invisible Hand" width="80" />
 </p>
 
 <p align="center">
