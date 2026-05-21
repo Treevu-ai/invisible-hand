@@ -27,7 +27,7 @@ export const translations = {
     stats: {
       eyebrow: "By the numbers", headline: "The agent checks real prices while you're drinking coffee.",
       subtext: `${PRODUCT.infra} monitors live shelf prices from VTEX retailers across 8 LATAM countries. ${PRODUCT.name} puts that real-time intelligence into every purchase.`,
-      items: [{ value: "26", label: "Retailers with live prices" }, { value: "8", label: "LATAM countries" }, { value: "24h", label: "Price freshness" }, { value: "30-40%", label: "Average savings" }],
+      items: [{ value: "27", label: "Retailers with live prices" }, { value: "8", label: "LATAM countries" }, { value: "24h", label: "Price freshness" }, { value: "30-40%", label: "Average savings" }],
     },
     who: {
       eyebrow: "Who uses an AI procurement agent", headline: "If you buy things for your business, this is for you.",
@@ -134,7 +134,7 @@ for opt in result:
     stats: {
       eyebrow: "Los números", headline: "El agente revisa precios reales mientras tomas café.",
       subtext: `${PRODUCT.infra} monitorea precios reales de retailers VTEX en 8 países LATAM. ${PRODUCT.name} pone esa inteligencia en tiempo real en cada compra.`,
-      items: [{ value: "26", label: "Retailers con precios reales" }, { value: "8", label: "Países LATAM" }, { value: "24h", label: "Frescura de precios" }, { value: "30-40%", label: "Ahorro promedio" }],
+      items: [{ value: "27", label: "Retailers con precios reales" }, { value: "8", label: "Países LATAM" }, { value: "24h", label: "Frescura de precios" }, { value: "30-40%", label: "Ahorro promedio" }],
     },
     who: {
       eyebrow: "Quién usa un agente de compras IA", headline: "Si compras cosas para tu empresa, esto es para ti.",
