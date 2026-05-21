@@ -3,7 +3,7 @@
 import { useEffect, useState, useRef, useCallback } from "react"
 import { motion } from "framer-motion"
 import { useLang } from "@/lib/language-context"
-import { t, CONTACT } from "@/lib/translations"
+import { t, PRODUCT } from "@/lib/translations"
 
 const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&*+-=<>"
 
@@ -53,8 +53,8 @@ export function Hero() {
           <p className="text-gray-400 text-[11px] tracking-wider">{tr.byline}</p>
         </motion.div>
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.6 }} className="flex flex-col sm:flex-row items-center gap-3">
-          <a href="#pricing" className="group inline-flex items-center gap-2 bg-black text-white font-medium px-8 py-3.5 text-sm hover:bg-[#00FF88] hover:text-black transition-colors" style={{ borderRadius: "999px" }}>{tr.ctaPrimary} <span className="transition-transform duration-200 group-hover:translate-x-1">→</span></a>
-          <a href={`https://t.me/${CONTACT.telegram.replace("+", "")}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-gray-200 text-gray-600 px-8 py-3.5 text-sm hover:bg-gray-50 hover:text-black transition-colors" style={{ borderRadius: "999px" }}>Telegram</a>
+          <a href="#waitlist" className="group inline-flex items-center gap-2 bg-black text-white font-medium px-8 py-3.5 text-sm hover:bg-[#00FF88] hover:text-black transition-colors" style={{ borderRadius: "999px" }}>{tr.ctaPrimary} <span className="transition-transform duration-200 group-hover:translate-x-1">→</span></a>
+          <a href={`https://${PRODUCT.infraDomain}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-gray-200 text-gray-600 px-8 py-3.5 text-sm hover:bg-gray-50 hover:text-black transition-colors" style={{ borderRadius: "999px" }}>{tr.ctaSecondary}</a>
         </motion.div>
       </div>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2, duration: 0.6 }} className="absolute bottom-8 flex flex-col items-center gap-2">
