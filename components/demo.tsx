@@ -25,7 +25,7 @@ export function Demo() {
         <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }} className="border border-gray-800 bg-black/40 backdrop-blur-sm overflow-hidden" style={{ borderRadius: "24px" }}>
           <div className="flex items-center gap-2 px-5 py-3 border-b border-gray-800">
             <div className="flex gap-1.5"><span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#FF5F56]" /><span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#FFBD2E]" /><span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#27C93F]" /></div>
-            <span className="ml-3 font-mono text-[9px] sm:text-[10px] text-gray-300 uppercase tracking-wider">api.invisiblehand.io</span>
+            <span className="ml-3 font-mono text-[9px] sm:text-[10px] text-gray-300 uppercase tracking-wider">agent.invisiblehand.io</span>
           </div>
           <div className="flex border-b border-gray-800">
             {(["curl","python","response"] as Tab[]).map(t => (
