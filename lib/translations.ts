@@ -98,6 +98,32 @@ for opt in result:
 }`,
       stats: [{ value: "2.1s", label: "search time" }, { value: "26%", label: "best savings" }, { value: "Live", label: "shelf prices" }],
     },
+    reports: {
+      eyebrow: "Para marcas — Competitive Weekly Report",
+      headline: "Sabé lo que cuesta tu producto.",
+      headline2: "Cada tienda. Cada día.",
+      subtext: `Sos gerente de marca en una empresa de consumo masivo. Tu producto está en 27 retailers de LATAM. ¿Sabés cuánto cuesta hoy en cada uno? Tus competidores sí. PDF semanal. Precios reales de estantería. Datos de ${PRODUCT.infra}.`,
+      cards: [
+        { title: "Tu marca, cada tienda, cada precio.", desc: "Sabé exactamente cuánto cuesta tu producto hoy en Wong (Lima), en Jumbo (Santiago), en Carrefour (São Paulo). Sin esperar reportes del distribuidor.", tag: "visibilidad" },
+        { title: "Los precios de tus competidores. En tiempo real.", desc: "Ves lo que cobra Nestlé, Unilever o el competidor local por la misma categoría en la misma tienda. No estimaciones. Precios de estantería.", tag: "competitivo" },
+        { title: "Alertas de cumplimiento MAP.", desc: "Si un retailer baja tu precio por debajo del mínimo acordado, lo sabés en 24 horas. No cuando el reporte trimestral muestra márgenes erosionados.", tag: "compliance" },
+      ],
+      pricing: "Reports desde $299/mes",
+      cta: "Pedí tu primer reporte",
+    },
+    inflation: {
+      eyebrow: "Para fondos y bancos — LATAM Inflation Tracker",
+      headline: "Señales de inflación 3-6 semanas",
+      headline2: "Antes de que el banco central publique.",
+      subtext: `Los precios del súper no esperan al BCRP, Banxico o Banco Central. Se mueven primero. ${PRODUCT.infra} rastrea precios reales en 27 retailers a diario. Convertimos eso en un índice de inflación que lidera el IPC oficial por 3-6 semanas.`,
+      cards: [
+        { title: "IPC de alimentos en tiempo real.", desc: "Índice semanal de canasta básica para Perú, México, Colombia, Brasil. Compará contra las publicaciones oficiales del IPC. Ves la tendencia antes que el mercado.", tag: "macro" },
+        { title: "Señales de inflación por categoría.", desc: "Lácteos subieron 4% esta semana. Limpieza estable. Bebidas bajando. Bajá a nivel de categoría y posicionate antes de que el central imprima.", tag: "granular" },
+        { title: "Monitoreo de spreads entre países.", desc: "Misma canasta. Distintos países. Distintas tasas de inflación. Rastreá la divergencia entre mercados LATAM e informá decisiones de asignación cross-border.", tag: "cross-border" },
+      ],
+      pricing: "Acceso API desde $799/mes",
+      cta: "Solicitar acceso",
+    },
     cta: {
       eyebrow: "The agent is live", headline: "Every procurement call you make today costs you margin.",
       headline2: "The agent finds deals while you do something else.", primary: "Get access", secondary: "Message on Telegram",
@@ -204,6 +230,32 @@ for opt in result:
   "action": "Esperando tu aprobacion"
 }`,
       stats: [{ value: "2.1s", label: "tiempo" }, { value: "26%", label: "mejor ahorro" }, { value: "Vivo", label: "precios reales" }],
+    },
+    reports: {
+      eyebrow: "Para marcas — Competitive Weekly Report",
+      headline: "Sabé lo que cuesta tu producto.",
+      headline2: "Cada tienda. Cada día.",
+      subtext: `Sos gerente de marca en una empresa de consumo masivo. Tu producto está en 27 retailers de LATAM. ¿Sabés cuánto cuesta hoy en cada uno? Tus competidores sí. PDF semanal. Precios reales de estantería. Datos de ${PRODUCT.infra}.`,
+      cards: [
+        { title: "Tu marca, cada tienda, cada precio.", desc: "Sabé exactamente cuánto cuesta tu producto hoy en Wong (Lima), en Jumbo (Santiago), en Carrefour (São Paulo). Sin esperar reportes del distribuidor.", tag: "visibilidad" },
+        { title: "Los precios de tus competidores. En tiempo real.", desc: "Ves lo que cobra Nestlé, Unilever o el competidor local por la misma categoría en la misma tienda. No estimaciones. Precios de estantería.", tag: "competitivo" },
+        { title: "Alertas de cumplimiento MAP.", desc: "Si un retailer baja tu precio por debajo del mínimo acordado, lo sabés en 24 horas. No cuando el reporte trimestral muestra márgenes erosionados.", tag: "compliance" },
+      ],
+      pricing: "Reports desde $299/mes",
+      cta: "Pedí tu primer reporte",
+    },
+    inflation: {
+      eyebrow: "Para fondos y bancos — LATAM Inflation Tracker",
+      headline: "Señales de inflación 3-6 semanas",
+      headline2: "Antes de que el banco central publique.",
+      subtext: `Los precios del súper no esperan al BCRP, Banxico o Banco Central. Se mueven primero. ${PRODUCT.infra} rastrea precios reales en 27 retailers a diario. Convertimos eso en un índice de inflación que lidera el IPC oficial por 3-6 semanas.`,
+      cards: [
+        { title: "IPC de alimentos en tiempo real.", desc: "Índice semanal de canasta básica para Perú, México, Colombia, Brasil. Compará contra las publicaciones oficiales del IPC. Ves la tendencia antes que el mercado.", tag: "macro" },
+        { title: "Señales de inflación por categoría.", desc: "Lácteos subieron 4% esta semana. Limpieza estable. Bebidas bajando. Bajá a nivel de categoría y posicionate antes de que el central imprima.", tag: "granular" },
+        { title: "Monitoreo de spreads entre países.", desc: "Misma canasta. Distintos países. Distintas tasas de inflación. Rastreá la divergencia entre mercados LATAM e informá decisiones de asignación cross-border.", tag: "cross-border" },
+      ],
+      pricing: "Acceso API desde $799/mes",
+      cta: "Solicitar acceso",
     },
     cta: {
       eyebrow: "El agente está vivo", headline: "Cada llamada de compras que haces hoy te cuesta margen.",

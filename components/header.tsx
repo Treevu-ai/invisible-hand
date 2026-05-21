@@ -43,6 +43,8 @@ export function Header() {
     { id: "capabilities", label: tr.nav.capabilities },
     { id: "process", label: tr.nav.howItWorks },
     { id: "demo", label: "Demo" },
+    { id: "reports", label: "Reports" },
+    { id: "inflation", label: "Inflation" },
     { id: "pricing", label: "Pricing" },
   ]
 

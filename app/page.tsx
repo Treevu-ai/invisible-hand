@@ -10,6 +10,7 @@ import { Demo } from "@/components/demo"
 import { PricingCards } from "@/components/pricing-cards"
 import { PricingCTA } from "@/components/pricing-cta"
 import { Footer } from "@/components/footer"
+import { Reports, Inflation } from "@/components/product-sections"
 
 export default function Home() {
   return (
@@ -23,6 +24,8 @@ export default function Home() {
       <Process />
       <Trust />
       <Demo />
+      <Reports />
+      <Inflation />
       <PricingCards />
       <PricingCTA />
       <Footer />
