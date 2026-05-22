@@ -25,7 +25,6 @@ function CardSection({ id, section }: { id: string; section: "reports" | "inflat
           ))}
         </div>
         <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3 }} className="text-center">
-          <p className="text-[#00FF88] font-bold text-lg mb-4">{tr.pricing}</p>
           <a href={`mailto:${CONTACT.email}?subject=Invisible%20Hand%20${id === "reports" ? "Weekly%20Report" : "Inflation%20Tracker"}`} className="inline-flex items-center gap-2 bg-black dark:bg-white text-white dark:text-black font-medium px-8 py-3.5 text-sm hover:bg-[#00FF88] hover:text-black transition-colors" style={{ borderRadius: "999px" }}>{tr.cta} →</a>
         </motion.div>
       </div>
