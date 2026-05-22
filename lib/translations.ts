@@ -183,9 +183,9 @@ for opt in result:
     process: {
       eyebrow: "Cómo funciona", headline: "Le dices al agente qué necesitas.", headline2: "Él se encarga del resto. Human in the loop.",
       steps: [
-        { n: "1", title: "Describes lo que necesitas", desc: "Lenguaje natural. Decile al agente qué producto, qué cantidad, qué presupuesto. Como hablar con tu mejor persona de compras. Sin formularios. Sin RFQs." },
+        { n: "1", title: "Describes lo que necesitas", desc: "Lenguaje natural. Dile al agente qué producto, qué cantidad, qué presupuesto. Como hablar con tu mejor persona de compras. Sin formularios. Sin RFQs." },
         { n: "2", title: "El agente encuentra las mejores opciones", desc: "Escanea retailers VTEX con precios reales en LATAM. Compara precios, condiciones, disponibilidad. Devuelve opciones ranqueadas con ahorro vs tu presupuesto." },
-        { n: "3", title: "Vos revisás y aprobás", desc: "El agente te manda las opciones por email o Telegram. Elegís una. Respondés 'aprobado'. Minutos, no días." },
+        { n: "3", title: "Revisas y apruebas", desc: "El agente te manda las opciones por email o Telegram. Eliges una. Respondes 'aprobado'. Minutos, no días." },
         { n: "4", title: "El agente prepara la orden de compra", desc: "Formatea la PO con todos los detalles — cantidades, precios, entrega, condiciones de pago. Lista para enviar o usar con tu propio medio de pago." },
       ],
     },
@@ -233,15 +233,15 @@ for opt in result:
     },
     reports: {
       eyebrow: "Para marcas — Competitive Weekly Report",
-      headline: "Sabé lo que cuesta tu producto.",
+      headline: "Sabe lo que cuesta tu producto.",
       headline2: "Cada tienda. Cada día.",
-      subtext: `Sos gerente de marca en una empresa de consumo masivo. Tu producto está en 27 retailers de LATAM. ¿Sabés cuánto cuesta hoy en cada uno? Tus competidores sí. PDF semanal. Precios reales de estantería. Datos de ${PRODUCT.infra}.`,
+      subtext: `Eres gerente de marca en una empresa de consumo masivo. Tu producto está en 27 retailers de LATAM. ¿Sabes cuánto cuesta hoy en cada uno? Tus competidores sí. PDF semanal. Precios reales de estantería. Datos de ${PRODUCT.infra}.`,
       cards: [
-        { title: "Tu marca, cada tienda, cada precio.", desc: "Sabé exactamente cuánto cuesta tu producto hoy en Wong (Lima), en Jumbo (Santiago), en Carrefour (São Paulo). Sin esperar reportes del distribuidor.", tag: "visibilidad" },
+        { title: "Tu marca, cada tienda, cada precio.", desc: "Sabe exactamente cuánto cuesta tu producto hoy en Wong (Lima), en Jumbo (Santiago), en Carrefour (São Paulo). Sin esperar reportes del distribuidor.", tag: "visibilidad" },
         { title: "Los precios de tus competidores. En tiempo real.", desc: "Ves lo que cobra Nestlé, Unilever o el competidor local por la misma categoría en la misma tienda. No estimaciones. Precios de estantería.", tag: "competitivo" },
-        { title: "Alertas de cumplimiento MAP.", desc: "Si un retailer baja tu precio por debajo del mínimo acordado, lo sabés en 24 horas. No cuando el reporte trimestral muestra márgenes erosionados.", tag: "compliance" },
+        { title: "Alertas de cumplimiento MAP.", desc: "Si un retailer baja tu precio por debajo del mínimo acordado, lo sabes en 24 horas. No cuando el reporte trimestral muestra márgenes erosionados.", tag: "compliance" },
       ],
-      cta: "Pedí el primer reporte",
+      cta: "Pide el primer reporte",
     },
     inflation: {
       eyebrow: "Para fondos y bancos — LATAM Inflation Tracker",
@@ -249,9 +249,9 @@ for opt in result:
       headline2: "Antes de que el banco central publique.",
       subtext: `Los precios del súper no esperan al BCRP, Banxico o Banco Central. Se mueven primero. ${PRODUCT.infra} rastrea precios reales en 27 retailers a diario. Convertimos eso en un índice de inflación que lidera el IPC oficial por 3-6 semanas.`,
       cards: [
-        { title: "IPC de alimentos en tiempo real.", desc: "Índice semanal de canasta básica para Perú, México, Colombia, Brasil. Compará contra las publicaciones oficiales del IPC. Ves la tendencia antes que el mercado.", tag: "macro" },
-        { title: "Señales de inflación por categoría.", desc: "Lácteos subieron 4% esta semana. Limpieza estable. Bebidas bajando. Bajá a nivel de categoría y posicionate antes de que el central imprima.", tag: "granular" },
-        { title: "Monitoreo de spreads entre países.", desc: "Misma canasta. Distintos países. Distintas tasas de inflación. Rastreá la divergencia entre mercados LATAM e informá decisiones de asignación cross-border.", tag: "cross-border" },
+        { title: "IPC de alimentos en tiempo real.", desc: "Índice semanal de canasta básica para Perú, México, Colombia, Brasil. Compara contra las publicaciones oficiales del IPC. Ves la tendencia antes que el mercado.", tag: "macro" },
+        { title: "Señales de inflación por categoría.", desc: "Lácteos subieron 4% esta semana. Limpieza estable. Bebidas bajando. Baja a nivel de categoría y posiciónate antes de que el central imprima.", tag: "granular" },
+        { title: "Monitoreo de spreads entre países.", desc: "Misma canasta. Distintos países. Distintas tasas de inflación. Rastrea la divergencia entre mercados LATAM e informa decisiones de asignación cross-border.", tag: "cross-border" },
       ],
       cta: "Solicitar acceso",
     },
