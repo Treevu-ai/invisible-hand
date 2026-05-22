@@ -51,9 +51,10 @@ export const translations = {
     process: {
       eyebrow: "How it works", headline: "You tell the agent what you need.", headline2: "It handles the rest. Human in the loop.",
       steps: [
-        { n: "1", title: "You describe what you need", desc: "Natural language. No forms. No RFQs. Like texting your best procurement person." },
-        { n: "2", title: "The agent researches", desc: "Scans VTEX retailers with live prices across LATAM. Compares prices, terms, availability." },
-        { n: "3", title: "You approve. It buys.", desc: "Pick one. Approve. The agent prepares and sends the PO. You stay in control." },
+        { n: "1", title: "You describe what you need", desc: "Natural language. Tell the agent what product, what quantity, what budget. Like texting your best procurement person. No forms. No RFQs." },
+        { n: "2", title: "The agent finds the best options", desc: "Scans VTEX retailers with live prices across LATAM. Compares prices, terms, availability. Returns ranked options with savings vs your budget." },
+        { n: "3", title: "You review and approve", desc: "The agent sends you the options via email or Telegram. You pick one. You reply 'approved.' Minutes, not days." },
+        { n: "4", title: "The agent prepares the purchase order", desc: "Formats the PO with all details — quantities, prices, delivery, payment terms. Ready to send or use with your own payment method." },
       ],
     },
     trust: {
@@ -182,9 +183,10 @@ for opt in result:
     process: {
       eyebrow: "Cómo funciona", headline: "Le dices al agente qué necesitas.", headline2: "Él se encarga del resto. Human in the loop.",
       steps: [
-        { n: "1", title: "Describes lo que necesitas", desc: "Lenguaje natural. Sin formularios. Sin RFQs. Como hablar con tu mejor persona de compras." },
-        { n: "2", title: "El agente investiga", desc: "Escanea retailers VTEX con precios reales en LATAM. Compara precios, condiciones, disponibilidad." },
-        { n: "3", title: "Tú apruebas. Él compra.", desc: "Elige una. Aprueba. El agente prepara y envía la PO. Tú mantienes el control." },
+        { n: "1", title: "Describes lo que necesitas", desc: "Lenguaje natural. Decile al agente qué producto, qué cantidad, qué presupuesto. Como hablar con tu mejor persona de compras. Sin formularios. Sin RFQs." },
+        { n: "2", title: "El agente encuentra las mejores opciones", desc: "Escanea retailers VTEX con precios reales en LATAM. Compara precios, condiciones, disponibilidad. Devuelve opciones ranqueadas con ahorro vs tu presupuesto." },
+        { n: "3", title: "Vos revisás y aprobás", desc: "El agente te manda las opciones por email o Telegram. Elegís una. Respondés 'aprobado'. Minutos, no días." },
+        { n: "4", title: "El agente prepara la orden de compra", desc: "Formatea la PO con todos los detalles — cantidades, precios, entrega, condiciones de pago. Lista para enviar o usar con tu propio medio de pago." },
       ],
     },
     trust: {
