@@ -1,3 +1,10 @@
+<!-- readme-hero -->
+<div align="center">
+
+<img src="assets/readme-hero.svg" alt="INVISIBLE HAND" width="100%" />
+
+</div>
+
 # Invisible Hand
 
 > **The same retail pricing data that moves markets — before Bloomberg, before reports, before your competitors adjust. 3,760 retailers. 67 countries. One clean signal.**
